@@ -1,0 +1,11 @@
+<div class="p-4">
+    <h2 class="text-3xl font-bold mb-4 text-center">Add Workout</h2>
+    <div class="bg-white shadow-md rounded p-4 mb-4">
+        <div class="flex mb-4">
+            <input type="text" placeholder="User Name" [(ngModel)]="userName" class="border-gray-300 border p-2 flex-1 mr-2" />
+            <input type="text" placeholder="Workout Type" [(ngModel)]="workoutType" class="border-gray-300 border p-2 flex-1 mr-2" />
+            <input type="number" placeholder="Workout Minutes" [(ngModel)]="workoutMinutes" class="border-gray-300 border p-2 flex-1" />
+        </div>
+        <button (click)="addWorkout()" class="px-4 py-2 bg-blue-500 text-white rounded-md">Add Workout</button>
+    </div>
+</div>
