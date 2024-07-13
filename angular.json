@@ -65,7 +65,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "health-challenge-tracker:build:production"
+              "buildTarget": "health-challenge-tracker:build:production",
+              "baseHref": "/HealthTrack/"
             },
             "development": {
               "buildTarget": "health-challenge-tracker:build:development"
