@@ -1,27 +1,94 @@
-# HealthChallengeTracker
+# Health Challenge Tracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+## Overview
+This project is an Angular single-page application (SPA) for tracking user workouts. Users can add their workout details, filter workouts by type, and view summaries of their total workout time.
 
-## Development server
+## Features
+- Add user details including workout type and minutes
+- Display users in a paginated table
+- Filter users by name and workout type
+- Persist data using `localStorage`
+- Generate summary statistics for each user
+- Unit tests with 100% code coverage for one component and one service
+- Hosted on [Github Pages](https://jayraj175coder.github.io/HealthTrack/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Prerequisites
+- Node.js
+- Angular CLI
 
-## Code scaffolding
+## Installation
+1. Clone the repository:
+    git clone https://github.com/yourusername/health-challenge-tracker.git
+    cd health-challenge-tracker
+   
+2. Install dependencies:
+    npm install
+  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Running the Application
+To start the development server:
+  ng serve
 
-## Build
+## Usage
+- Adding a User
+- Navigate to the "Add User" section.
+- Fill in the user name, workout type, and workout minutes.
+- Click "Add Workout" to save the details.
+## Filtering Users
+- Use the search bar to filter users by name.
+- Use the dropdown menu to filter users by workout type.
+## Viewing Summaries
+- Navigate to the "Summary" section to view workout summaries for each user.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ ## Code Coverage
 
-## Running unit tests
+The project achieves 100% code coverage for both `UserInputComponent` and `UserService`. Below is the summary of the coverage report:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Summary
 
-## Running end-to-end tests
+| File                      | Statements | Branches | Functions | Lines |
+|---------------------------|------------|----------|-----------|-------|
+| user-input.component.ts   | 100%       | 100%     | 100%      | 100%  |
+| user.service.ts           | 100%       | 100%     | 100%      | 100%  |
+ 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Test cases
+You can find the full code coverage report [here](coverage/index.html).
 
-## Further help
+## Deployment
+  (https://jayraj175coder.github.io/HealthTrack/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Screenshots
+Home Page
+![Alt text](image.png)
+Add User
+![Alt text](image-1.png)
+User List
+![Alt text](image-2.png)
+
+
+## Folder Structure
+
+health-challenge-tracker/.
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── summary/
+│   │   │   ├── user-input/
+│   │   │   ├── workout-minutes/
+│   │   │   └── workout-type/
+│   │   ├── models/
+│   │   └── services/
+│   ├── assets/
+│   ├── environments/
+│   └── main.ts
+├── coverage/
+├── angular.json
+├── package.json
+├── README.md
+└── tsconfig.json
+
+## author
+jayraj Sanas
+
+Thanks.

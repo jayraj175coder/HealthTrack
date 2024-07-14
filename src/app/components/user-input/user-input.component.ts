@@ -2,21 +2,20 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { UserService } from '../../services/user.service';
 import { User } from '../../models/user.model';
-
+ 
 @Component({
   selector: 'app-user-input',
   standalone: true,
   imports: [FormsModule],
   templateUrl: './user-input.component.html',
- 
 })
 export class UserInputComponent {
   userName: string = '';
   workoutType: string = '';
   workoutMinutes: number = 0;
-
+ 
   constructor(private userService: UserService) {}
-
+ 
   addWorkout() {
     const newUser: User = {
       id: Date.now(),
@@ -27,5 +26,12 @@ export class UserInputComponent {
       }]
     };
     this.userService.addUser(newUser);
+    this.resetFields();
+  }
+ 
+  resetFields() {
+    this.userName = '';
+    this.workoutType = '';
+    this.workoutMinutes = 0;
   }
 }

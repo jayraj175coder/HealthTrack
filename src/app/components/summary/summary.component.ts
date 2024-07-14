@@ -19,6 +19,7 @@ export class SummaryComponent implements OnInit {
   itemsPerPage: number = 5;
   currentPage: number = 1;
   selectedUser: User | null = null;
+  noResults: boolean = false;
 
   constructor(private userService: UserService) {}
 
@@ -45,6 +46,9 @@ export class SummaryComponent implements OnInit {
         user.workouts.some(workout => workout.type === this.workoutType)
       );
     }
+
+    // Check if no results found
+    this.noResults = users.length === 0;
 
     // Paginate the filtered users
     this.filteredUsers = users.slice(

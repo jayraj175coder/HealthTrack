@@ -5,14 +5,12 @@ import { User } from '../models/user.model';  // Ensure this path is correct
   providedIn: 'root'
 })
 export class UserService {
-  [x: string]: any;
   private users: User[] = [];
 
   constructor() {
     this.users = this.getInitialUsers();
   }
 
-  //store in jsonlocal storage
   getInitialUsers(): User[] {
     return [
       {
@@ -42,7 +40,6 @@ export class UserService {
     ];
   }
 
-  //add local storage users to service
   addUser(user: User): void {
     this.users.push(user);
     localStorage.setItem('userData', JSON.stringify(this.users));
