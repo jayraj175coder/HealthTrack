@@ -53,7 +53,8 @@ The project achieves 100% code coverage for both `UserInputComponent` and `UserS
  
 
 ## Test cases
-You can find the full code coverage report [here](coverage/index.html).
+You can find the full code coverage report 
+![Alt text](image-3.png)
 
 ## Deployment
   (https://jayraj175coder.github.io/HealthTrack/)
@@ -67,26 +68,6 @@ User List
 ![Alt text](image-2.png)
 
 
-## Folder Structure
-
-health-challenge-tracker/.
-├── src/
-│   ├── app/
-│   │   ├── components/
-│   │   │   ├── summary/
-│   │   │   ├── user-input/
-│   │   │   ├── workout-minutes/
-│   │   │   └── workout-type/
-│   │   ├── models/
-│   │   └── services/
-│   ├── assets/
-│   ├── environments/
-│   └── main.ts
-├── coverage/
-├── angular.json
-├── package.json
-├── README.md
-└── tsconfig.json
 
 ## author
 jayraj Sanas
